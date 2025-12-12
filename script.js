@@ -20,7 +20,9 @@ let intervalID;
 
 function updateDisplay() {
 
-  timerEl.textContent = `${String(timer.min).padStart(2, "0")}:${String(timer.sec).padStart(2, "0")}:${String(timer.milsec).padStart(2, "0")}`
+  timerEl.textContent = `${String(timer.min).padStart(2, "0")}:
+  ${String(timer.sec).padStart(2, "0")}:
+  ${String(timer.milsec).padStart(2, "0")}`
 }
 
 startBtn.addEventListener("click", () => {
